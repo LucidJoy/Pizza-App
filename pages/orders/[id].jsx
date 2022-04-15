@@ -17,14 +17,14 @@ const Order = () => {
       <div className={styles.left}>
         <div className={styles.row}>
           <table className={styles.table}>
-            <tr className={styles.tr}>
+            <tr className={styles.trTitle}>
               <th>Order ID</th>
               <th>Customer</th>
               <th>Address</th>
               <th>Total</th>
             </tr>
 
-            <tr>
+            <tr className={styles.tr}>
               <td>
                 <span className={styles.id}>321333987</span>
               </td>
@@ -34,7 +34,7 @@ const Order = () => {
               <td>
                 <span className={styles.address}>Glendale, LA</span>
               </td>
-              <td>
+              <td style={{ marginTop: "10px" }}>
                 <span className={styles.total}>$39.80</span>
               </td>
             </tr>

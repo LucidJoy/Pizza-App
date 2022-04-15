@@ -55,7 +55,7 @@ const Product = () => {
               name="double"
               className={styles.checkbox}
             />
-            <label htmlFor="double">Double Ingredients</label>
+            <label htmlFor="double">Double</label>
           </div>
 
           <div className={styles.option}>
