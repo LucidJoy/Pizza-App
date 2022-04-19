@@ -133,3 +133,28 @@
     width: 100%;
   }
 }
+
+.paymentMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -15px;
+}
+
+.payButton {
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.payButton:hover {
+  background-color: teal;
+  color: white;
+  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
