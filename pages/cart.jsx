@@ -26,7 +26,6 @@ const Cart = () => {
 
   const createOrder = async (data) => {
     try {
-      console.log(data);
       const res = await axios.post("http://localhost:3000/api/orders", data);
 
       if (res.status === 201) {
@@ -34,7 +33,7 @@ const Cart = () => {
         dispatch(reset());
       }
     } catch (err) {
-      console.error(err);
+      console.error(err.response);
     }
   };
 

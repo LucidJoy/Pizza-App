@@ -89,7 +89,7 @@ const Product = ({ pizza }) => {
 
         <div className={styles.add}>
           <input
-            onChange={(e) => e.target.value}
+            onChange={(e) => setQuantity(e.target.value)}
             type="number"
             defaultValue={1}
             className={styles.quantity}
