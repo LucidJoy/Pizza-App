@@ -1,0 +1,51 @@
+.container {
+  padding: 50px;
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: left;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:first-child {
+  background-color: teal;
+  margin-right: 10px;
+}
+
+.button:first-child:hover {
+  background-color: #1a8d8d;
+}
+
+.button:last-child {
+  background-color: #dc143c;
+}
+
+.button:last-child:hover {
+  background-color: #e02c50;
+}
+
+.buttonNext {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: burlywood;
+}
+
+.buttonNext:hover {
+  background-color: #e1bf93;
+}

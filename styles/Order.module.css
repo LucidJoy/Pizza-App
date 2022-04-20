@@ -118,7 +118,7 @@
   }
 
   .address::before {
-    content: "Location: ";
+    content: "Address: ";
     font-weight: 500;
   }
 
