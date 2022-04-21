@@ -37,7 +37,17 @@ const Add = ({ setClose }) => {
         data
       );
 
-      console.log(uploadRes.data);
+      const { url } = uploadRes.data;
+      const newProduct = {
+        title,
+        desc,
+        prices,
+        extraOptions,
+        img: url,
+      };
+
+      await axios.post("http://localhost:3000/api/products", newProduct);
+      setClose(false);
     } catch (error) {
       console.log(`Error in components/Add.jsx (handlecreate) --> ${error}`);
     }
