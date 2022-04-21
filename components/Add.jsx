@@ -26,7 +26,22 @@ const Add = ({ setClose }) => {
     setExtraOptions((prev) => [...prev, extra]);
   };
 
-  const handleCreate = (e) => {};
+  const handleCreate = async () => {
+    const data = new FormData();
+    data.append("file", file);
+    data.append("upload_preset", "uploads");
+
+    try {
+      const uploadRes = await axios.post(
+        "https://api.cloudinary.com/v1_1/lucidjoy/image/upload",
+        data
+      );
+
+      console.log(uploadRes.data);
+    } catch (error) {
+      console.log(`Error in components/Add.jsx (handlecreate) --> ${error}`);
+    }
+  };
 
   return (
     <div className={styles.container}>
